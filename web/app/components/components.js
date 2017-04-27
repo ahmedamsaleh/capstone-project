@@ -1,9 +1,8 @@
 import angular from 'angular';
-
-import {foundation} from './foundation/foundation';
+import {common} from './common/common';
 import {products} from './products/products';
 
 export const components = angular.module('components', [
-  foundation.name,
+  common.name,
   products.name
 ]);

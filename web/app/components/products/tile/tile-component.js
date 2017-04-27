@@ -1,7 +1,7 @@
 import './tile.styl';
 import template from './tile.html';
 
-export const tileComponent = ()=> {
+export const tileComponent = () => {
   return {
     template,
     restrict: 'E',

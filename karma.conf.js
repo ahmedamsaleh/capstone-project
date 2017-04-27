@@ -13,11 +13,10 @@ module.exports = function(config) {
 
       module: {
         loaders: [
-          {test: /\.svg$/, loader: 'raw'},
           {test: /\.html$/, loader: 'raw'},
           {test: /\.styl$/, loader: 'style!css!stylus'},
           {test: /\.css/, loader: 'style!css'},
-          { test: /\.json$/, loader: 'json-loader' },
+          {test: /\.json$/, loader: 'json-loader' },
           {
             test: /\.js$/,
             loader: 'babel',
@@ -57,10 +56,10 @@ module.exports = function(config) {
     autoWatch: true,
     autoWatchBatchDelay: 100,
     basePath: '',
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
     colors: true,
     exclude: [],
-    frameworks: ['mocha', 'should'],
+    frameworks: ['mocha', 'should', 'testdouble'],
     logLevel: config.LOG_INFO,
     port: 9876,
     reporters: ['mocha', 'growl', 'coverage', 'junit'],

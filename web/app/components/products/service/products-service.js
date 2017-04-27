@@ -1,5 +1,10 @@
-import angular from 'angular';
-import {products} from './products/products';
+const ProductsService = ($http) => {
+  return {
+    fetch: (url) => {
+      return $http.get(url);
+    }};
+};
 
-export const productsService = angular.module('productsService', [
-]).factory('products', products);
+ProductsService.$inject = ['$http'];
+
+export {ProductsService};
