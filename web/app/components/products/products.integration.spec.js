@@ -41,10 +41,16 @@
        ($state.current.name).should.equal('products');
      });
 
-     it('products', (done) => {
+     it('product count', (done) => {
        $timeout(function() {
          ($(element).find('h1').text()).should.endWith('27');
-         // $(element).find('span[rel=product-title]').length.should.equal(27);
+         done();
+       }, 1000);
+     });
+
+     it('products', (done) => {
+       $timeout(function() {
+         $(element).find('span[rel=product-title]').length.should.equal(27);
          done();
 
        }, 1000);
