@@ -1,17 +1,14 @@
-function ProductsController(service) {
+function ProductController(service) {
   const vm = this;
-  vm.products = [];
-
   vm.fetch = (url) => {
     return service.fetch(url).then((response) => {
       vm.products = response.data.products;
     });
   };
-
-  vm.fetch('/products.json');
+  vm.products = [];
 }
 
 //noinspection JSValidateTypes
-ProductsController.$inject = ['service'];
+ProductController.$inject = [];
 
-export {ProductsController};
+export {ProductController};

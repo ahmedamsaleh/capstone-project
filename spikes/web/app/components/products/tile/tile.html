@@ -1,12 +1,30 @@
+<<<<<<< HEAD:web/app/components/products/tile/tile.html
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline" rel="product-title">{{product.title}}</span>
+      <span class="md-subhead" rel="product-description">{{product.vendor}}</span>
+      <span class="md-subhead" rel="product-price">{{product.variants[0].price}}</span>
+    </md-card-title-text>
+    <md-card-title-media>
+      <div class="md-media-lg card-media"><img ng-src="{{product.image.src}}"></div>
+    </md-card-title-media>
+  </md-card-title>
+  <md-card-actions layout="row" layout-align="end center">
+    <md-button>Action 1</md-button>
+    <md-button>Action 2</md-button>
+  </md-card-actions>
+</md-card>
+=======
 <div>
   <md-card>
     <md-card-title>
       <md-card-title-text>
-        <span class="md-headline" rel="products-title">{{products.title}}</span>
-        <span class="md-subhead" rel="products-price">{{products.variants[0].price | currency}}</span>
+        <span class="md-headline" rel="product-title">{{product.title}}</span>
+        <span class="md-subhead" rel="product-price">{{product.variants[0].price | currency}}</span>
       </md-card-title-text>
       <md-card-title-media class="parent">
-        <div class="md-media-lg card-media card"><img ng-src="{{products.image.src}}"></div>
+        <div class="md-media-lg card-media card"><img ng-src="{{product.image.src}}"></div>
       </md-card-title-media>
     </md-card-title>
     <md-card-actions layout="row" layout-align="end center">
@@ -16,3 +34,4 @@
   </md-card>
 </div>
 
+>>>>>>> integration:spikes/web/app/components/products/tile/tile.html
